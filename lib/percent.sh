@@ -5,5 +5,5 @@ percent() {
     echo 0
     return
   fi
-  clamp $(($2 * 100 / $1)) 0 100
+  clamp $(($1 * 100 / $2)) 0 100
 }
