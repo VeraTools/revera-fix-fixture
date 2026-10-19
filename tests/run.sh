@@ -12,5 +12,6 @@ check() {
 check "clamp below" "$(clamp 1 5 9)" 5
 check "clamp above" "$(clamp 12 5 9)" 9
 check "clamp inside" "$(clamp 7 5 9)" 7
+check "percent of zero" "$(percent 3 0)" 0
 [ "$fail" -eq 0 ] && echo "all checks passed"
 exit "$fail"
